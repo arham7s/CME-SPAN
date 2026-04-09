@@ -1,0 +1,2 @@
+risk_key,currency,scenario_01,scenario_02,scenario_03,scenario_04,scenario_05,scenario_06,scenario_07,scenario_08,scenario_09,scenario_10,scenario_11,scenario_12,scenario_13,scenario_14,scenario_15,scenario_16,intra_spread_charge,delivery_charge,short_option_minimum,notes
+gold::mar-26,USD,,,,,,,,,,,,,,,,,0,0,0,Fill with daily CME SPAN 16-scenario P/L values per 1 contract.

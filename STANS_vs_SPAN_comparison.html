@@ -1,0 +1,100 @@
+
+<div style="padding: 1rem 0; font-size: 14px;">
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; border: 0.5px solid var(--color-border-tertiary);">
+      <p style="font-size: 11px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 6px;">STANS</p>
+      <p style="font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px;">OCC — Options Clearing Corp</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">System for Theoretical Analysis and Numerical Simulations · Est. 2006</p>
+    </div>
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; border: 0.5px solid var(--color-border-tertiary);">
+      <p style="font-size: 11px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 6px;">SPAN</p>
+      <p style="font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px;">CME Group</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Standard Portfolio Analysis of Risk · Est. 1988</p>
+    </div>
+  </div>
+
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr style="background: var(--color-background-secondary);">
+        <th style="padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 500; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); width: 22%;">Dimension</th>
+        <th style="padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 500; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); width: 39%;">STANS (OCC)</th>
+        <th style="padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 500; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); width: 39%;">SPAN (CME)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Core method</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Large-scale Monte Carlo simulation (10,000+ scenarios per risk factor)</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Grid-based scenario simulation (16 predefined risk scenarios per product)</td>
+      </tr>
+      <tr style="background: var(--color-background-secondary);">
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Risk measure</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">99% Expected Shortfall (ES) over a 2-day horizon</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Value at Risk (VaR) — worst likely loss over 1 trading day</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Approach type</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Multivariate — models all assets jointly via copula functions</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Primarily univariate — evaluates each product group separately</td>
+      </tr>
+      <tr style="background: var(--color-background-secondary);">
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Correlation modelling</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Explicit copula captures tail dependence across all ~8,000+ assets</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Inter-commodity spreads provide limited offsets within product groups</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Tail risk capture</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Strong — ES accounts for losses beyond the VaR threshold; fat-tailed innovations modelled</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Weaker — VaR can underestimate extreme loss events beyond the worst scenario</td>
+      </tr>
+      <tr style="background: var(--color-background-secondary);">
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Products covered</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Equity/index options, futures, FLEX options, volatility futures, stock loans</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Futures, options on futures, physicals, equities, OTC swaps (via SPAN 2)</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Margin horizon</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">2-day liquidation horizon</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">1-day liquidation horizon</td>
+      </tr>
+      <tr style="background: var(--color-background-secondary);">
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Volatility treatment</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Implied vol surface modelled with skew across tenors and deltas; volatility clustering allowed</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Fixed volatility scan ranges defined by exchange; less dynamic</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Adoption</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Proprietary to OCC — not licensed externally</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Global standard — used by 50+ exchanges and clearinghouses worldwide</td>
+      </tr>
+      <tr style="background: var(--color-background-secondary);">
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Transparency</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Publicly documented via SEC filings; detailed model whitepapers available</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Well-documented by CME; parameters (scan ranges, spreads) published daily</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Computational intensity</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Very high — full Monte Carlo across 40,000+ inputs daily</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px;">Lower — scenario grid is fast and replicable; industry-friendly</td>
+      </tr>
+      <tr style="background: var(--color-background-secondary);">
+        <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary); font-size: 13px;">Evolution</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); font-size: 13px;">Ongoing — recent enhancements for short-dated options, vol surface extensions</td>
+        <td style="padding: 10px 12px; color: var(--color-text-primary); font-size: 13px;">SPAN 2 launched: adds HVaR, stress VaR, liquidity/concentration charges, broader product scope</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px;">
+    <div style="background: var(--color-background-info); border-radius: var(--border-radius-md); padding: 0.9rem 1rem; border: 0.5px solid var(--color-border-info);">
+      <p style="font-size: 12px; font-weight: 500; color: var(--color-text-info); margin: 0 0 4px;">STANS strength</p>
+      <p style="font-size: 13px; color: var(--color-text-primary); margin: 0;">More accurate tail-risk capture and cross-asset correlation via full simulation. Better suited for complex options portfolios.</p>
+    </div>
+    <div style="background: var(--color-background-success); border-radius: var(--border-radius-md); padding: 0.9rem 1rem; border: 0.5px solid var(--color-border-success);">
+      <p style="font-size: 12px; font-weight: 500; color: var(--color-text-success); margin: 0 0 4px;">SPAN strength</p>
+      <p style="font-size: 13px; color: var(--color-text-primary); margin: 0;">Speed, simplicity, and global interoperability. Easily replicated by clearing members for pre-trade margin checks.</p>
+    </div>
+  </div>
+
+</div>
